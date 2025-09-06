@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iQ HasaN</title>
+  <meta name="description" content="Official personal site of Mind of Hasan - YouTuber, content creator and storyteller." />
+  <meta name="keywords" content="Mind of Hasan, YouTube, TikTok" />
+  <meta name="author" content="Mind of Hasan" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+   <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="light">
+  <!-- Background Canvas -->
+  <canvas id="bg"></canvas>
+
+  <!-- Top Buttons -->
+  <div class="menu-toggle" id="menuToggle" title="Menu"><i class="fa-solid fa-bars"></i></div>
+  <div class="anim-toggle" id="animToggle" title="Switch Animation"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+  <div class="theme-toggle" id="themeToggle" title="Toggle Theme"><i class="fas fa-adjust"></i></div>
+    <!-- Share Popup -->
+  <div class="overlay" id="shareOverlay"></div>
+  <div class="popup" id="sharePopup">
+    <span class="close-btn" id="closeSharePopup">×</span>
+    <h2>Share This Page</h2>
+    <img id="qrImage" src="" alt="QR Code" />
+    <p class="xz" id="shareLink"></p>
+    <button id="copyShareBtn">Copy Link</button>
+  </div>
+  
+  <!-- Sidebar Menu -->
+  <div id="menuOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="top-row">
+      <h3>Site Menu</h3>
+      <span class="close-menu" id="closeMenu" title="Close">×</span>
+    </div>
+    <nav class="menu-list">
+      <a class="menu-item" data-target="tab-home">
+  <i class="fa-solid fa-house"></i> <span>Home</span>
+</a>
+
+<a class="menu-item" data-target="tab-music">
+  <i class="fa-solid fa-music"></i> <span>Music</span>
+</a>
+
+<a class="menu-item" data-target="tab-tools">
+  <i class="fa-solid fa-screwdriver-wrench"></i> <span>Tools</span>
+</a>
+
+<a class="menu-item" data-target="tab-note">
+  <i class="fa-solid fa-note-sticky"></i> Note
+</a>
+
+<a class="menu-item" data-target="tab-book">
+  <i class="fa-solid fa-book"></i> Books 
+</a>
+<a class="menu-item" 
+   href="mailto:mindofhasan@yahoo.com?subject=✉️%20যোগাযোগ&body=নামঃ%20%0D%0Aঠিকানাঃ%20%0D%0Aমন্তব্যঃ%20">
+  <i class="fa-solid fa-envelope"></i> 
+  <span>Email</span>
+    <a class="menu-item shareBtn" href="javascript:void(0)">
+  <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+</a>
+ <a class="menu-item" href="https://t.me/mindofhasan" target="_blank">
+  <i class="fa-brands fa-telegram"></i> <span>Telegram Group</span>
+</a>
+<a class="menu-item" data-target="tab-creator">
+  <i class="fa-solid fa-user"></i> Creator Program
+</a>
+ </nav>
+  </aside>
+  <!--********************************* -->
+  
+
+
+
+
+
+<div id="tab-home" class="tab-content">
+  <!-- এখানে হোম কনটেন্ট থাকবে -->
+    <div class="container" id="title">
+    <img class="profile-pic" src="mind of hasan.png" alt="Profile Picture">
+    <h1 class="username">iQ HasaN<span class="verified-badge"></span></h1>
+
+    <marquee class="cx" behavior="scroll" direction="left" scrollamount="4"
+             onmouseover="this.stop();" onmouseout="this.start();">
+      ভাগ্যে যা আছে, তা-ই হবে, আমি শুধু চেষ্টা করে যাবো,
+      হার-জিতের চিন্তা নয়, নিজের পথে নিঃশব্দে হাঁটবো ।
+    </marquee>
+
+    <div class="links">
+      <a class="facebook" href="https://www.facebook.com/share/12M36kFsQu3/" target="_blank"><i class="fab fa-facebook"></i>Facebook ID</a>
+      <a class="facebook" href="https://www.facebook.com/share/1GFisgoXwf/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+      <a class="tiktok"   href="https://www.tiktok.com/@iqehasan" target="_blank"><i class="fab fa-tiktok"></i>TikTok ID</a>
+      <a class="youtube"  href="https://youtube.com/@iqehasan"   target="_blank"><i class="fab fa-youtube"></i>Channel</a>
+       
+    </div>
+  </div>
+
+  
+</div>
+
+<div id="tab-music" class="tab-content">
+  <hr />
+  <hr />
+<!-- ==========================
+   Music Card 1
+========================== -->
+<div class="music-card">
+  <div class="title">
+    <span>DJ Happy Billal Music বিল্লাল ভাইয়ের ডিজে মিউজিক Mind Of Hasan website ��️</span>
+  </div>
+  
+  <audio src="xx.mp3" class="player"></audio>
+  
+  <div class="controls">
+    <a href="javascript:void(0)" class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </a>
+    <a href="javascript:void(0)" class="download-btn" data-src="xx.mp3">
+      <i class="fa-solid fa-download"></i>
+    </a>
+    <a href="javascript:void(0)" class="shareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ==========================
+   Music Card 2
+========================== -->
+<div class="music-card">
+  <div class="title">
+    <span>Happy Billal Music বিল্লাল ভাইয়ের মিউজিক Mind Of Hasan website �</span>
+  </div>
+  
+  <audio src="xxx.mp3" class="player"></audio>
+  
+  <div class="controls">
+    <a href="javascript:void(0)" class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </a>
+    <a href="javascript:void(0)" class="download-btn" data-src="xxx.mp3">
+      <i class="fa-solid fa-download"></i>
+    </a>
+    <a href="javascript:void(0)" class="shareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ==========================
+   Music Card 3
+========================== -->
+<div class="music-card">
+  <div class="title">
+    <span>বিল্লাল ভাইয়ের ইমোশন মিউজিক</span>
+  </div>
+  
+  <audio src="xxxx.mp3" class="player"></audio>
+  
+  <div class="controls">
+    <a href="javascript:void(0)" class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </a>
+    <a href="javascript:void(0)" class="download-btn" data-src="xxxx.mp3">
+      <i class="fa-solid fa-download"></i>
+    </a>
+    <a href="javascript:void(0)" class="shareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ==========================
+   Music Card 4
+========================== -->
+<div class="music-card">
+  <div class="title">
+    <span>বিল্লাল ভাইয়ের স্মার্ট মিউজিক</span>
+  </div>
+  
+  <audio src="xxxxx.mp3" class="player"></audio>
+  
+  <div class="controls">
+    <a href="javascript:void(0)" class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </a>
+    <a href="javascript:void(0)" class="download-btn" data-src="xxxxx.mp3">
+      <i class="fa-solid fa-download"></i>
+    </a>
+    <a href="javascript:void(0)" class="shareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+    </a>
+  </div>
+</div>
+
+<!-- ==========================
+   Music Card 5
+========================== -->
+<div class="music-card">
+  <div class="title">
+    <span>DJ Happy Billal Music বিল্লাল ভাইয়ের ডিজে মিউজিক Mind Of Hasan website �</span>
+  </div>
+  
+  <audio src="xxxxxx.mp3" class="player"></audio>
+  
+  <div class="controls">
+    <a href="javascript:void(0)" class="play-btn">
+      <i class="fa-solid fa-play"></i>
+    </a>
+    <a href="javascript:void(0)" class="download-btn" data-src="xxxxxx.mp3">
+      <i class="fa-solid fa-download"></i>
+    </a>
+    <a href="javascript:void(0)" class="shareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="tab-tools" class="tab-content">
+  <div class="icon-carousel-wrapper">
+    <button class="scroll-btn left">&lt;</button>
+    <button class="scroll-btn right">&gt;</button>
+
+    <div class="icon-carousel">
+      <a href="https://podcast.adobe.com/en/enhance" target="_blank" class="icon-box">
+        <i class="fa-solid fa-microphone fa-3x"></i>
+        <span>Voice AI</span>
+        <marquee behavior="5" direction="left">এটি একটি শক্তিশালী ব্রডকাস্ট এডিটিং ওয়েবসাইট এটি যেকোনো বয়সকে প্রফেশনাল ভাবে নয়েজ রিমুভ করতে পারে</marquee>
+      </a>
+      <a href="https://remaker.ai/features/ai-image-upscaler/" target="_blank" class="icon-box">
+        <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+        <span>Image AI</span>
+        <marquee behavior="5" direction="left">--এটি রিমিনি এবং অন্যান্য ইমেজ enhance থেকে ও বেটার এছাড়াও এখানে আরো অসংখ্য টুল রয়েছে যেগুলো অবশ্যই আপনার কাজে আসবে</marquee>
+      </a>
+      <a href="https://www.seaart.ai" target="_blank" class="icon-box">
+        <i class="fas fa-video fa-3x"></i>
+        <span>Video AI</span>
+        <marquee behavior="5" direction="left"> এটি দিয়ে ফ্রিতে AI ভিডিও এবং ইমেজ জেনারেট করা যায় যা সত্যিই অসাধারণ</marquee>
+      </a>
+      <a href="https://voice.ai/tools/audio-enhancer" target="_blank" class="icon-box">
+        <i class="fa-solid fa-microphone fa-3x"></i>
+        <span>Voice AI™</span>
+        <marquee behavior="5" direction="left"> এটি দিয়ে একাউন্ট ছাড়াই বয়েস enhance করা যায় এটিও ভালো</marquee>
+      </a>
+      <a href="https://vocalremover.org/" target="_blank" class="icon-box">
+        <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+        <span>Music AI</span>
+        <marquee behavior="5" direction="left"> এটা দিয়ে যেকোনো সং থেকে মিউজিক আলাদা করা যায় এটিও খুব ইন্টারেস্টিং</marquee>
+      </a>
+      <a href="https://www.x.com" target="_blank" class="icon-box">
+        <i class="fas fa-pencil-alt fa-3x"></i>
+        <span>Tast</span>
+        <marquee behavior="5" direction="left">এটি টেস্টিং স্লট এখানে খুব দ্রুতই আরো মজাদার AI টোন অ্যাড করা হবে</marquee>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div id="tab-note" class="tab-content">
+  <!-- এখানে নোট কনটেন্ট থাকবে -->
+  <div class="coming-container">
+  <h1>🚧 Page Not Available</h1>
+  <p>Coming Soon...</p>
+  <a href="*" class="home-btn">Return Home</a>
+</div>
+</div>
+
+<div id="tab-book" class="tab-content">
+  <!-- এখানে বুক কনটেন্ট থাকবে -->
+  <div class="coming-container">
+  <h1>🚧 Page Not Available</h1>
+  <p>Coming Soon...</p>
+  <a href="/" class="home-btn">Return Home</a>
+</div>
+</div>
+
+<div id="tab-creator" class="tab-content">
+  <!-- এখানে ক্রিয়েটর প্রোগ্রাম কনটেন্ট থাকবে -->
+  <div class="coming-container">
+  <h1>🚧 Page Not Available</h1>
+  <p>Coming Soon...</p>
+  <a href="/" class="home-btn">Return Home</a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--********************************* -->
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+  <script src="main.js"></script>
+  <script src="tols.js"></script>
+  <script src="music.js" defer></script>
+  <script src="note.js"> </script>
+</body>
+</html>
